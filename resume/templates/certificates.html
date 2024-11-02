@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content1 %} 
+
+<h1 class="light text-center">Certificates</h1>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for Certificate in Certificates %}
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static Certificate.image %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ Certificate.Cert }}</h5>
+          <p class="card-text">{{ Certificate.Achievements }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+{% endblock content1 %}

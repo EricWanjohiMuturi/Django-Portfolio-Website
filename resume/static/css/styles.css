@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(15, 16, 91);
+}
+
+.navbar-nav .nav-link:hover{
+    font-weight: bold;
+    color: #4fffb0;   
+}
+
+.navbar-nav .nav-link{
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+.navbar-brand{
+    font-size: 25px;
+
+}
+
+.navbar{
+    background-color: rgb(5, 5, 62);
+}
+
+.circular-image-container{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.circular-image{
+    width: 120%;
+    height: auto;
+    display: block;
+}
+
+.title{
+    color: beige;
+}
+
+.name{
+    color: beige;
+}
+
+.social_link{
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid navy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_image{
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.form-label{
+    color: white;
+}
+
+.form-check-label{
+    color: white;
+}
+
+h1{
+    color: white;
+}
+
+.nav .nav-item .nav-link{
+    color: white;
+}
+

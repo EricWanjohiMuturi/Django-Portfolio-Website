@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content1 %}
+
+<h1 class="text-center">My experiences</h1>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for experience in experiences %}
+    <div class="col">
+      <div class="card">
+        <img src="{% static experience.image %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{experience.company}}</h5>
+          <h6 class="card-title">{{experience.role}}</h6>
+          <p class="card-text">{{experience.Achievements}}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+{% endblock content1 %}
